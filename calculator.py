@@ -4,7 +4,7 @@ def welcome():
 
 def calculate():
 
-    operation = input('
+    operation = input('''
     Please type in the math operation you would like to complete:
     + for addition
     - for substraction
@@ -12,7 +12,7 @@ def calculate():
     / for division
     ** for power
     % for modulo
-    ' )
+    ''')
 
 
 
@@ -22,7 +22,7 @@ def calculate():
 
     #Addition
     if operation == '+':
-        print(f'{number_1} + {number_2} = '))
+        print(f'{number_1} + {number_2} = ')
         print(number_1 + number_2)
 
     #Subtraction
@@ -58,9 +58,9 @@ def calculate():
 
 def again():
 
-    calc_again = input('
+    calc_again = input('''
     Do you want to calculate again?
-    Please type Y for YES or N for NO.')
+    Please type Y for YES or N for NO.''')
 
     if calc_again.upper() == 'Y':
         calculate()
@@ -75,3 +75,4 @@ def again():
 welcome()
 
 calculate()
+ 
